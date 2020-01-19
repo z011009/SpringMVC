@@ -50,7 +50,7 @@ jsp/html
 
 **最典型的MVC就是JSP + servlet + javabean的模式。**
 
-![image-20200115163558290](E:\Typora2\笔记图片存放处\image-20200115163558290.png)
+![image-20200115163558290](https://github.com/z011009/SpringMVC/blob/master/images/image-20200115163558290.png)
 
 ## 1.2.Model1
 
