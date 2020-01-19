@@ -401,7 +401,7 @@ public class HelloController implements Controller {
 
 2. 在IDEA的项目发布中，添加lib依赖！
 
-   ![image-20200115171111329](E:\Typora2\笔记图片存放处\image-20200115171111329.png)
+   ![image-20200115171111329](https://github.com/z011009/SpringMVC/blob/master/images/image-20200115171111329.png)
 
 3. 重启Tomcat 
 
