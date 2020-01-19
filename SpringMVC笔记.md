@@ -57,7 +57,7 @@ jsp/html
 * 在web早期的开发中，通常采用的都是Model1。
 * Model1中，主要分为两层，视图层和模型层。
 
-![image-20200115163742564](E:\Typora2\笔记图片存放处\image-20200115163742564.png)
+![image-20200115163742564](https://github.com/z011009/SpringMVC/blob/master/images/image-20200115163742564.png)
 
 
 
@@ -67,7 +67,7 @@ Model1缺点：JSP职责不单一，职责过重，不便于维护；
 
 ## 1.3.Model2
 
-![image-20200115163821492](E:\Typora2\笔记图片存放处\image-20200115163821492.png)
+![image-20200115163821492](https://github.com/z011009/SpringMVC/blob/master/images/image-20200115163821492.png)
 
 1. 用户发请求
 2. Servlet接收请求数据，并调用对应的业务逻辑方法
@@ -256,7 +256,7 @@ Spring的web框架围绕DispatcherServlet设计。 DispatcherServlet的作用是
 
  Spring MVC框架像许多其他MVC框架一样, **以请求为驱动** , **围绕一个中心Servlet分派请求及提供其他功能**，**DispatcherServlet是一个实际的Servlet (它继承自HttpServlet 基类)**。
 
-![image-20200115165126507](E:\Typora2\笔记图片存放处\image-20200115165126507.png)
+![image-20200115165126507](https://github.com/z011009/SpringMVC/blob/master/images/image-20200115165126507.png)
 
 
 
@@ -264,13 +264,13 @@ Spring的web框架围绕DispatcherServlet设计。 DispatcherServlet的作用是
 
  当发起请求时被前置的控制器拦截到请求，根据请求参数生成代理请求，找到请求对应的实际控制器，控制器处理请求，创建数据模型，访问数据库，将模型响应给中心控制器，控制器使用模型与视图渲染视图结果，将结果返回给中心控制器，再将结果返回给请求者。
 
-![image-20200115165026076](E:\Typora2\笔记图片存放处\image-20200115165026076.png)
+![image-20200115165026076](https://github.com/z011009/SpringMVC/blob/master/images/image-20200115165026076.png)
 
 
 
 #### SpringMVC执行原理
 
-![image-20200115165443706](E:\Typora2\笔记图片存放处\image-20200115165443706.png)
+![image-20200115165443706](https://github.com/z011009/SpringMVC/blob/master/images/image-20200115165443706.png)
 
 图为SpringMVC的一个较完整的流程图，实线表示SpringMVC框架提供的技术，不需要开发者实现，虚线表示需要开发者实现。
 
@@ -569,7 +569,7 @@ public class HelloController {
 
 ##### 8.配置Tomcat运行测试！
 
-![image-20200115210831432](E:\Typora2\笔记图片存放处\image-20200115210831432.png)
+![image-20200115210831432](https://github.com/z011009/SpringMVC/blob/master/images/image-20200115210831432.png)
 
 ## 4.2.小结
 
@@ -648,7 +648,7 @@ id/name对应请求路径，class对应处理请求的类
 
 ##### 5.配置Tomcat测试
 
-![image-20200115214052762](E:\Typora2\笔记图片存放处\image-20200115214052762.png)
+![image-20200115214052762](https://github.com/z011009/SpringMVC/blob/master/images/image-20200115214052762.png)
 
 #### 说明：
 
@@ -692,7 +692,7 @@ public class ControllerTest2 {
 
 ##### 4.运行Tomcat测试
 
-![image-20200115215335772](E:\Typora2\笔记图片存放处\image-20200115215335772.png)
+![image-20200115215335772](https://github.com/z011009/SpringMVC/blob/master/images/image-20200115215335772.png)
 
 ### 5.3.2.小结：
 
@@ -783,7 +783,7 @@ public class RestFulController {
 
 3.运行测试
 
-![image-20200116130339796](E:\Typora2\笔记图片存放处\image-20200116130339796.png)
+![image-20200116130339796](https://github.com/z011009/SpringMVC/blob/master/images/image-20200116130339796.png)
 
 #### 2.思考：使用路径变量的好处？
 
@@ -802,7 +802,7 @@ public String test1(@PathVariable int a, @PathVariable String b, Model model) {
 }
 ```
 
-![image-20200116130853088](E:\Typora2\笔记图片存放处\image-20200116130853088.png)		
+![image-20200116130853088](https://github.com/z011009/SpringMVC/blob/master/images/image-20200116130853088.png)		
 
 #### 4.使用method属性指定请求类型
 
@@ -822,7 +822,7 @@ public String test1(@PathVariable int a, @PathVariable int b, Model model) {
 }
 ```
 
-![image-20200116131325511](E:\Typora2\笔记图片存放处\image-20200116131325511.png)
+![image-20200116131325511](https://github.com/z011009/SpringMVC/blob/master/images/image-20200116131325511.png)
 
 我们使用浏览器地址栏进行访问默认是GET请求，会报错405：，将POST改为GET
 
@@ -832,7 +832,7 @@ public String test1(@PathVariable int a, @PathVariable int b, Model model) {
 
 则正常
 
-![image-20200116132504588](E:\Typora2\笔记图片存放处\image-20200116132504588.png)
+![image-20200116132504588](https://github.com/z011009/SpringMVC/blob/master/images/image-20200116132504588.png)
 
 ##### 小结：
 
@@ -1046,7 +1046,7 @@ ModelAndView 可以在储存数据的同时，可以进行设置返回的逻辑�
 
 3.输入中文测试
 
-![image-20200116150945875](E:\Typora2\笔记图片存放处\image-20200116150945875.png)
+![image-20200116150945875](https://github.com/z011009/SpringMVC/blob/master/images/image-20200116150945875.png)
 
 不得不说，乱码问题是在我们开发中十分常见的问题，也是让我们程序猿比较头大的问题！
 
@@ -1157,7 +1157,7 @@ var json = '{"a": "Hello", "b": "World"}'; //这是一个 JSON 字符串，本�
 </html>
 ```
 
-![image-20200116171110992](E:\Typora2\笔记图片存放处\image-20200116171110992.png)
+![image-20200116171110992](https://github.com/z011009/SpringMVC/blob/master/images/image-20200116171110992.png)
 
 
 
@@ -2062,17 +2062,17 @@ public class BookController {
 
 #### 8.项目截图
 
-![image-20200117212313591](E:\Typora2\笔记图片存放处\image-20200117212313591.png)
+![image-20200117212313591](https://github.com/z011009/SpringMVC/blob/master/images/image-20200117212313591.png)
 
-![image-20200117212334388](E:\Typora2\笔记图片存放处\image-20200117212334388.png)
+![image-20200117212334388](https://github.com/z011009/SpringMVC/blob/master/images/image-20200117212334388.png)
 
-![image-20200117212409129](E:\Typora2\笔记图片存放处\image-20200117212409129.png)
+![image-20200117212409129](https://github.com/z011009/SpringMVC/blob/master/images/image-20200117212409129.png)
 
-![image-20200117212423420](E:\Typora2\笔记图片存放处\image-20200117212423420.png)
+![image-20200117212423420](https://github.com/z011009/SpringMVC/blob/master/images/image-20200117212423420.png)
 
-![image-20200117212436521](E:\Typora2\笔记图片存放处\image-20200117212436521.png)
+![image-20200117212436521](https://github.com/z011009/SpringMVC/blob/master/images/image-20200117212436521.png)
 
-![image-20200117212450764](E:\Typora2\笔记图片存放处\image-20200117212450764.png)
+![image-20200117212450764](https://github.com/z011009/SpringMVC/blob/master/images/image-20200117212450764.png)
 
 
 
@@ -2407,7 +2407,7 @@ public String a3(String name,String pwd){
 
 动态请求响应，局部刷新，就是如此！
 
-![image-20200118165331970](E:\Typora2\笔记图片存放处\image-20200118165331970.png)
+![image-20200118165331970](https://github.com/z011009/SpringMVC/blob/master/images/image-20200118165331970.png)
 
 # 11.拦截器
 
