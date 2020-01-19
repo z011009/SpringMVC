@@ -391,7 +391,7 @@ public class HelloController implements Controller {
 
 ##### 7.配置Tomcat 启动测试
 
-![image-20200115170606918](E:\Typora2\笔记图片存放处\image-20200115170606918.png)
+![image-20200115170606918](https://github.com/z011009/SpringMVC/blob/master/images/image-20200115170606918.png)
 
 ## **3.2.idea可能遇到的问题：**
 
